@@ -1,0 +1,434 @@
+SQL> set define off
+SQL> 
+SQL> -- Drop the tables if they are already there.
+SQL> -- OK to get an Oracle error if the table(s) not found (if running script for the first time)
+SQL> drop table  TEAM_PLAYER_ARENA;
+
+Table dropped.
+
+SQL> drop table  TEAM;
+
+Table dropped.
+
+SQL> drop table  PLAYER;
+
+Table dropped.
+
+SQL> drop table  ARENA;
+
+Table dropped.
+
+SQL> 
+SQL> purge recyclebin;
+
+Recyclebin purged.
+
+SQL> 
+SQL> -- Create the tables, views, constraints, etc..
+SQL> 
+SQL> -- Create the TEAM table
+SQL> CREATE TABLE  TEAM (    Team_ID		     INTEGER,
+  2  					     Tname	     VARCHAR(15),
+  3  					     Rank	     INTEGER,
+  4  					     City	     VARCHAR(20),
+  5  						     Championships   INTEGER,
+  6  						     PRIMARY KEY (Team_id)
+  7  				     );
+
+Table created.
+
+SQL> 
+SQL> -- Create the PLAYER table
+SQL> CREATE TABLE  PLAYER(   Player_ID	     INTEGER,
+  2  						     Pname	     VARCHAR(30),
+  3  						     Position	     VARCHAR(20),
+  4  						     Draft_year      INTEGER,
+  5  							     Retire_year INTEGER,
+  6  						     Education	     VARCHAR(30),
+  7  						     PRIMARY KEY(Player_ID)
+  8  				     );
+
+Table created.
+
+SQL> 
+SQL> -- Create the ARENA table
+SQL> CREATE TABLE  ARENA(    ARENA_ID	     INTEGER,
+  2  						     Aname	     VARCHAR(20),
+  3  						     City	     VARCHAR(20),
+  4  						     PRIMARY KEY(ARENA_ID)
+  5  				     );
+
+Table created.
+
+SQL> 
+SQL> -- Create the TEAM_PLAYER_ARENA  table
+SQL> CREATE TABLE TEAM_PLAYER_ARENA (	     Team_ID	     INTEGER,
+  2  					     Player_ID	     INTEGER,
+  3  					     ARENA_ID	     INTEGER,
+  4  					     Points	     INTEGER,
+  5  					     PRIMARY KEY(Team_ID, Player_ID, ARENA_ID),
+  6  					     FOREIGN KEY(Team_ID)    REFERENCES TEAM,
+  7  					     FOREIGN KEY(Player_ID)  REFERENCES PLAYER,
+  8  					     FOREIGN KEY(ARENA_ID)   REFERENCES ARENA
+  9  				     );
+
+Table created.
+
+SQL> 
+SQL> -- Ensure all data is removed from the tables
+SQL> truncate table TEAM_PLAYER_ARENA;
+
+Table truncated.
+
+SQL> delete from TEAM;
+
+0 rows deleted.
+
+SQL> delete from PLAYER;
+
+0 rows deleted.
+
+SQL> delete from ARENA;
+
+0 rows deleted.
+
+SQL> 
+SQL> 
+SQL> -- INSERT THE DATA WITH NAMED FIELDS (notice that the fields are not in the order the table was created)
+SQL> 
+SQL> insert into     TEAM    (Tname,Rank,City,Championships,Team_ID)
+  2  values( 'Clippers',6,'LA', 0 , 1  );
+
+1 row created.
+
+SQL> insert into     TEAM    (Tname,Rank , City,Championships,Team_ID)
+  2  values( 'Bulls'	 , 5 ,	     'Chicago'	   , 6,      2	);
+
+1 row created.
+
+SQL> insert into     TEAM    (Tname,	     Rank , City, Championships, Team_ID)
+  2  values('Hornets'	, 9 ,	     'Charlotte'   , 0,      3	);
+
+1 row created.
+
+SQL> insert into     TEAM    (Tname,	     Rank , City, Championships, Team_ID)
+  2  values('Blazers'	, 2 ,	     'Portland'    , 0,      4	);
+
+1 row created.
+
+SQL> insert into     TEAM    (Tname,	     Rank , City, Championships, Team_ID)
+  2  values('Spurs'	, 7 ,	     'San Antonio' , 5,      5	);
+
+1 row created.
+
+SQL> insert into     TEAM    (Tname,	     Rank , City, Championships, Team_ID)
+  2  values('Mavericks' , 4 ,	     'Dallas'	   , 1,      6	);
+
+1 row created.
+
+SQL> 
+SQL> -- INSERT THE DATA WITH ORDER OF FIELDS
+SQL> insert into     PLAYER  values( 1 ,  'Chris Paul' ,'Small Forward', 2005,null,'Wake Forest');
+
+1 row created.
+
+SQL> insert into     PLAYER  values( 2 ,  'Tony Parker' , 'Point guard', 2001,null,'INSEP');
+
+1 row created.
+
+SQL> insert into     PLAYER  values( 3 ,  'Marco Belinelli'  , 'Shooting guard',2007,null,'San Giovanni');
+
+1 row created.
+
+SQL> insert into     PLAYER  values( 4 ,  'Gary Neal' ,'Power Forward', 2007,null,'La Salle University');
+
+1 row created.
+
+SQL> insert into     PLAYER  values( 5 ,  'Kawhi Leonard','Forward' , 2011,null,'San Diego State');
+
+1 row created.
+
+SQL> insert into     PLAYER  values( 6 ,  'Patty Mills','Point guard', 2009,null,'Marist College');
+
+1 row created.
+
+SQL> insert into     PLAYER  values( 7 ,  'Tyson Chandler','Center', 2001,null,'Dominguez');
+
+1 row created.
+
+SQL> insert into     PLAYER  values( 8 ,  'Derek Fisher','Shooting guard',1996,2014,'Arkansas');
+
+1 row created.
+
+SQL> 
+SQL> ----------------------------------------
+SQL> 
+SQL> insert into     ARENA   values( 1 ,     'American Airlines' ,   'Miami'	  );
+
+1 row created.
+
+SQL> insert into     ARENA   values( 2 ,     'Moda Center'	 ,   'Portland'   );
+
+1 row created.
+
+SQL> insert into     ARENA   values( 3 ,     'Staples Center'	 ,   'LA'	  );
+
+1 row created.
+
+SQL> insert into     ARENA   values( 4 ,     'United Center'	 ,   'Chicago'	  );
+
+1 row created.
+
+SQL> insert into     ARENA   values( 5 ,     'TD Garden'	 ,   'Boston'	  );
+
+1 row created.
+
+SQL> insert into     ARENA   values( 6 ,     'ATT Center'	 ,   'San Antonio');
+
+1 row created.
+
+SQL> insert into     ARENA   values( 7 ,     'Philips Arena'	 ,   'Atlanta'	  );
+
+1 row created.
+
+SQL> 
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 1,      1,      1,      20  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 1 ,     1 ,     4 ,     17  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 2 ,     3 ,     1 ,     32  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 2 ,     3 ,     2 ,     22  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 2 ,     3 ,     3 ,     13  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 2 ,     3 ,     4 ,     25  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 2 ,     3 ,     5 ,     06  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 2 ,     3 ,     6 ,     14  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 2 ,     3 ,     7 ,     18  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 2 ,     5 ,     2 ,     11  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 3 ,     3 ,     1 ,     20  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 3 ,     4 ,     2 ,     05  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 4 ,     6 ,     3 ,     23  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 4 ,     6 ,     7 ,     18  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 5 ,     2 ,     2 ,     24  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 5 ,     2 ,     4 ,     10  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 5 ,     5 ,     5 ,     25  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 5 ,     5 ,     7 ,     16  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 5 ,     6 ,     2 ,     24  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 5 ,     1 ,     4 ,     33  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 5 ,     3 ,     4 ,     31  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 5 ,     4 ,     4 ,     26  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 5 ,     5 ,     4 ,     14  );
+
+1 row created.
+
+SQL> insert into     TEAM_PLAYER_ARENA	     values( 5 ,     6 ,     4 ,     05  );
+
+1 row created.
+
+SQL> 
+SQL> --queries
+SQL> 
+SQL> --1. names of players whose names begin with a 'T'
+SQL> select Pname from PLAYER where Pname LIKE 'T%';
+
+PNAME                                                                                                                                                                                                                                                                                                       
+------------------------------                                                                                                                                                                                                                                                                              
+Tony Parker                                                                                                                                                                                                                                                                                                 
+Tyson Chandler                                                                                                                                                                                                                                                                                              
+
+SQL> 
+SQL> --2. player ids and names of players who are Shooting guards drafted after the year 1995
+SQL> select Player_ID, Pname from PLAYER where Position = 'Shooting guard' AND Draft_year > 1995;
+
+ PLAYER_ID PNAME                                                                                                                                                                                                                                                                                            
+---------- ------------------------------                                                                                                                                                                                                                                                                   
+         3 Marco Belinelli                                                                                                                                                                                                                                                                                  
+         8 Derek Fisher                                                                                                                                                                                                                                                                                     
+
+SQL> 
+SQL> --3. names of arenas that hosted a team from Charlotte but did not host a Shooting guard.
+SQL> --Do this query in two ways: as a flat select, completely nested, i.e. using sub queries
+SQL> --so as to avoid all JOIN clauses
+SQL> 
+SQL> --3i. flat select
+SQL> select DISTINCT A.Aname
+  2  from ARENA A, TEAM_PLAYER_ARENA TPA
+  3  INNER JOIN TEAM ON TPA.Team_ID = TEAM.Team_ID
+  4  INNER JOIN PLAYER ON PLAYER.Player_ID = TPA.Player_ID
+  5  where A.ARENA_ID = TPA.ARENA_ID AND TEAM.City = 'Charlotte' AND
+  6  PLAYER.Position != 'Shooting guard';
+
+ANAME                                                                                                                                                                                                                                                                                                       
+--------------------                                                                                                                                                                                                                                                                                        
+Moda Center                                                                                                                                                                                                                                                                                                 
+
+SQL> 
+SQL> --3ii. nested query
+SQL> select DISTINCT A.Aname
+  2  from ARENA A, TEAM_PLAYER_ARENA TPA
+  3  where A.ARENA_ID = TPA.ARENA_ID
+  4  AND TPA.ARENA_ID IN
+  5  (select TPA.ARENA_ID
+  6  from TEAM_PLAYER_ARENA TPA, TEAM T, PLAYER P
+  7  where T.Team_ID = TPA.Team_ID AND T.City = 'Charlotte'AND P.Player_ID = TPA.Player_ID AND P.Position != 'Shooting guard')
+  8  ;
+
+ANAME                                                                                                                                                                                                                                                                                                       
+--------------------                                                                                                                                                                                                                                                                                        
+Moda Center                                                                                                                                                                                                                                                                                                 
+
+SQL> 
+SQL> --4. names of players that are not retired
+SQL> select DISTINCT Pname from PLAYER P where P.Retire_year IS NULL;
+
+PNAME                                                                                                                                                                                                                                                                                                       
+------------------------------                                                                                                                                                                                                                                                                              
+Chris Paul                                                                                                                                                                                                                                                                                                  
+Gary Neal                                                                                                                                                                                                                                                                                                   
+Patty Mills                                                                                                                                                                                                                                                                                                 
+Marco Belinelli                                                                                                                                                                                                                                                                                             
+Tyson Chandler                                                                                                                                                                                                                                                                                              
+Tony Parker                                                                                                                                                                                                                                                                                                 
+Kawhi Leonard                                                                                                                                                                                                                                                                                               
+
+7 rows selected.
+
+SQL> 
+SQL> --avg points of arena is 17.2
+SQL> --player 1 avg 23.33
+SQL> --player 2 avg 17
+SQL> --player 3 avg 20.11
+SQL> --player 4 avg 15.5
+SQL> --player 5 avg 16.5
+SQL> --player 6 avg 17.5
+SQL> --player 7 avg 0
+SQL> --player 8 avg 0
+SQL> --
+SQL> --5. player_id and average points scored of players who scored an average of points that is
+SQL> --greater than the average points in arena 2
+SQL> select TPA_P.Player_ID, AVG(TPA_P.Points) AS avgpts
+  2  from TEAM_PLAYER_ARENA TPA_P
+  3  GROUP BY TPA_P.Player_ID
+  4  HAVING AVG(TPA_P.Points) >
+  5  (select AVG(TPA.Points)
+  6  from TEAM_PLAYER_ARENA TPA
+  7  where TPA.ARENA_ID = 2)
+  8  ORDER BY TPA_P.Player_ID ASC
+  9  ;
+
+ PLAYER_ID     AVGPTS                                                                                                                                                                                                                                                                                       
+---------- ----------                                                                                                                                                                                                                                                                                       
+         1 23.3333333                                                                                                                                                                                                                                                                                       
+         3 20.1111111                                                                                                                                                                                                                                                                                       
+         6       17.5                                                                                                                                                                                                                                                                                       
+
+SQL> 
+SQL> --6. arena name & city of arenas that did not host the Spurs team
+SQL> select DISTINCT A.Aname, A.City
+  2  from ARENA A, TEAM T, TEAM_PLAYER_ARENA TPA
+  3  where A.Aname NOT IN
+  4  (select A.Aname
+  5  from ARENA A, TEAM T, TEAM_PLAYER_ARENA TPA
+  6  where TPA.Team_ID = T.Team_ID AND T.Tname = 'Spurs' AND A.ARENA_ID = TPA.ARENA_ID)
+  7  GROUP BY A.Aname, A.City
+  8  ORDER BY A.Aname ASC
+  9  ;
+
+ANAME                CITY                                                                                                                                                                                                                                                                                   
+-------------------- --------------------                                                                                                                                                                                                                                                                   
+ATT Center           San Antonio                                                                                                                                                                                                                                                                            
+American Airlines    Miami                                                                                                                                                                                                                                                                                  
+Staples Center       LA                                                                                                                                                                                                                                                                                     
+
+SQL> 
+SQL> --7. names of arenas that hosted a team from 'LA' and hosted a 'Forward'
+SQL> SELECT A.Aname
+  2  FROM ARENA A, PLAYER P,TEAM T, TEAM_PLAYER_ARENA TPA
+  3  WHERE A.ARENA_ID = TPA.ARENA_ID AND P.Player_ID = TPA.Player_ID AND P.Position = 'Forward' AND T.Team_ID = TPA.Team_ID AND T.City = 'LA';
+
+no rows selected
+
+SQL> 
+SQL> --8. names of players who were drafted after 2005
+SQL> SELECT P.Pname
+  2  FROM PLAYER P
+  3  WHERE Draft_year > 2005;
+
+PNAME                                                                                                                                                                                                                                                                                                       
+------------------------------                                                                                                                                                                                                                                                                              
+Marco Belinelli                                                                                                                                                                                                                                                                                             
+Gary Neal                                                                                                                                                                                                                                                                                                   
+Kawhi Leonard                                                                                                                                                                                                                                                                                               
+Patty Mills                                                                                                                                                                                                                                                                                                 
+
+SQL> 
+SQL> -- COMMIT and save data
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> 
+SQL> SPOOL OFF

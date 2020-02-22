@@ -1,0 +1,3488 @@
+Current Time: 0
+
+Current Process on the CPU: P1
+The Next Process on the CPU: P2
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2        16         1
+   P3         8         1
+   P4         3         1
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+     [empty]
+
+.................
+.................
+
+
+
+Current Time: 1
+
+Current Process on the CPU: P1
+The Next Process on the CPU: P2
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2        16         1
+   P3         8         1
+   P4         3         1
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+     [empty]
+
+.................
+.................
+
+
+
+Current Time: 2
+
+Current Process on the CPU: P1
+The Next Process on the CPU: P2
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2        16         1
+   P3         8         1
+   P4         3         1
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+     [empty]
+
+.................
+.................
+
+
+
+Current Time: 3
+
+Current Process on the CPU: P1
+The Next Process on the CPU: P2
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2        16         1
+   P3         8         1
+   P4         3         1
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+     [empty]
+
+.................
+.................
+
+
+
+Current Time: 4
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         8         1
+   P4         3         1
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        27
+.................
+.................
+
+
+
+Current Time: 5
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         8         1
+   P4         3         1
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        26
+.................
+.................
+
+
+
+Current Time: 6
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         8         1
+   P4         3         1
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        25
+.................
+.................
+
+
+
+Current Time: 7
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         8         1
+   P4         3         1
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        24
+.................
+.................
+
+
+
+Current Time: 8
+
+Current Process on the CPU: P3
+The Next Process on the CPU: P4
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P4         3         1
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        23
+.................
+.................
+
+
+
+Current Time: 9
+
+Current Process on the CPU: P3
+The Next Process on the CPU: P4
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P4         3         1
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        22
+.................
+.................
+
+
+
+Current Time: 10
+
+Current Process on the CPU: P3
+The Next Process on the CPU: P4
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P4         3         1
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        21
+.................
+.................
+
+
+
+Current Time: 11
+
+Current Process on the CPU: P3
+The Next Process on the CPU: P4
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P4         3         1
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        20
+.................
+.................
+
+
+
+Current Time: 12
+
+Current Process on the CPU: P4
+The Next Process on the CPU: P5
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        19
+.................
+.................
+
+
+
+Current Time: 13
+
+Current Process on the CPU: P4
+The Next Process on the CPU: P5
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        18
+.................
+.................
+
+
+
+Current Time: 14
+
+Current Process on the CPU: P4
+The Next Process on the CPU: P5
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P5         4         1
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        17
+.................
+.................
+
+
+
+Current Time: 15
+
+Current Process on the CPU: P5
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        16
+   P4        35
+.................
+.................
+
+
+
+Current Time: 16
+
+Current Process on the CPU: P5
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        15
+   P4        34
+.................
+.................
+
+
+
+Current Time: 17
+
+Current Process on the CPU: P5
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        14
+   P4        33
+.................
+.................
+
+
+
+Current Time: 18
+
+Current Process on the CPU: P5
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6        11         1
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        13
+   P4        32
+.................
+.................
+
+
+
+Current Time: 19
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        12
+   P4        31
+   P5        48
+.................
+.................
+
+
+
+Current Time: 20
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        11
+   P4        30
+   P5        47
+.................
+.................
+
+
+
+Current Time: 21
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        10
+   P4        29
+   P5        46
+.................
+.................
+
+
+
+Current Time: 22
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7        14         1
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         9
+   P4        28
+   P5        45
+.................
+.................
+
+
+
+Current Time: 23
+
+Current Process on the CPU: P7
+The Next Process on the CPU: P8
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+   P6         7         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         8
+   P4        27
+   P5        44
+.................
+.................
+
+
+
+Current Time: 24
+
+Current Process on the CPU: P7
+The Next Process on the CPU: P8
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+   P6         7         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         7
+   P4        26
+   P5        43
+.................
+.................
+
+
+
+Current Time: 25
+
+Current Process on the CPU: P7
+The Next Process on the CPU: P8
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+   P6         7         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         6
+   P4        25
+   P5        42
+.................
+.................
+
+
+
+Current Time: 26
+
+Current Process on the CPU: P7
+The Next Process on the CPU: P8
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P8         4         1
+   P9         3         1
+   P2        12         2
+   P3         4         2
+   P6         7         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         5
+   P4        24
+   P5        41
+.................
+.................
+
+
+
+Current Time: 27
+
+Current Process on the CPU: P8
+The Next Process on the CPU: P9
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P9         3         1
+   P2        12         2
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         4
+   P4        23
+   P5        40
+.................
+.................
+
+
+
+Current Time: 28
+
+Current Process on the CPU: P8
+The Next Process on the CPU: P9
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P9         3         1
+   P2        12         2
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         3
+   P4        22
+   P5        39
+.................
+.................
+
+
+
+Current Time: 29
+
+Current Process on the CPU: P8
+The Next Process on the CPU: P9
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P9         3         1
+   P2        12         2
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         2
+   P4        21
+   P5        38
+.................
+.................
+
+
+
+Current Time: 30
+
+Current Process on the CPU: P8
+The Next Process on the CPU: P9
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P9         3         1
+   P2        12         2
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         1
+   P4        20
+   P5        37
+.................
+.................
+
+
+
+Current Time: 31
+
+Current Process on the CPU: P9
+The Next Process on the CPU: P1
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P1         3         1
+   P2        12         2
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        19
+   P5        36
+   P8        14
+.................
+.................
+
+
+
+Current Time: 32
+
+Current Process on the CPU: P9
+The Next Process on the CPU: P1
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P1         3         1
+   P2        12         2
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        18
+   P5        35
+   P8        13
+.................
+.................
+
+
+
+Current Time: 33
+
+Current Process on the CPU: P9
+The Next Process on the CPU: P1
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P1         3         1
+   P2        12         2
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        17
+   P5        34
+   P8        12
+.................
+.................
+
+
+
+Current Time: 34
+
+Current Process on the CPU: P1
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2        12         2
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        16
+   P5        33
+   P8        11
+   P9        37
+.................
+.................
+
+
+
+Current Time: 35
+
+Current Process on the CPU: P1
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2        12         2
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        15
+   P5        32
+   P8        10
+   P9        36
+.................
+.................
+
+
+
+Current Time: 36
+
+Current Process on the CPU: P1
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2        12         2
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        14
+   P5        31
+   P8         9
+   P9        35
+.................
+.................
+
+
+
+Current Time: 37
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        13
+   P5        30
+   P8         8
+   P9        34
+   P1        31
+.................
+.................
+
+
+
+Current Time: 38
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        12
+   P5        29
+   P8         7
+   P9        33
+   P1        30
+.................
+.................
+
+
+
+Current Time: 39
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        11
+   P5        28
+   P8         6
+   P9        32
+   P1        29
+.................
+.................
+
+
+
+Current Time: 40
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        10
+   P5        27
+   P8         5
+   P9        31
+   P1        28
+.................
+.................
+
+
+
+Current Time: 41
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         9
+   P5        26
+   P8         4
+   P9        30
+   P1        27
+.................
+.................
+
+
+
+Current Time: 42
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         8
+   P5        25
+   P8         3
+   P9        29
+   P1        26
+.................
+.................
+
+
+
+Current Time: 43
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         7
+   P5        24
+   P8         2
+   P9        28
+   P1        25
+.................
+.................
+
+
+
+Current Time: 44
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         4         2
+   P6         7         2
+   P7        10         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         6
+   P5        23
+   P8         1
+   P9        27
+   P1        24
+.................
+.................
+
+
+
+Current Time: 45
+
+Current Process on the CPU: P8
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         4         2
+   P6         7         2
+   P7        10         2
+   P2         5         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         5
+   P5        22
+   P9        26
+   P1        23
+.................
+.................
+
+
+
+Current Time: 46
+
+Current Process on the CPU: P8
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         4         2
+   P6         7         2
+   P7        10         2
+   P2         5         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         4
+   P5        21
+   P9        25
+   P1        22
+.................
+.................
+
+
+
+Current Time: 47
+
+Current Process on the CPU: P8
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         4         2
+   P6         7         2
+   P7        10         2
+   P2         5         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         3
+   P5        20
+   P9        24
+   P1        21
+.................
+.................
+
+
+
+Current Time: 48
+
+Current Process on the CPU: P8
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         4         2
+   P6         7         2
+   P7        10         2
+   P2         5         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         2
+   P5        19
+   P9        23
+   P1        20
+.................
+.................
+
+
+
+Current Time: 49
+
+Current Process on the CPU: P3
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         7         2
+   P7        10         2
+   P2         5         2
+   P8         1         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         1
+   P5        18
+   P9        22
+   P1        19
+.................
+.................
+
+
+
+Current Time: 50
+
+Current Process on the CPU: P4
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         7         2
+   P7        10         2
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5        17
+   P9        21
+   P1        18
+.................
+.................
+
+
+
+Current Time: 51
+
+Current Process on the CPU: P4
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         7         2
+   P7        10         2
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5        16
+   P9        20
+   P1        17
+.................
+.................
+
+
+
+Current Time: 52
+
+Current Process on the CPU: P4
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         7         2
+   P7        10         2
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5        15
+   P9        19
+   P1        16
+.................
+.................
+
+
+
+Current Time: 53
+
+Current Process on the CPU: P4
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         7         2
+   P7        10         2
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5        14
+   P9        18
+   P1        15
+.................
+.................
+
+
+
+Current Time: 54
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7        10         2
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5        13
+   P9        17
+   P1        14
+   P4        41
+.................
+.................
+
+
+
+Current Time: 55
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7        10         2
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5        12
+   P9        16
+   P1        13
+   P4        40
+.................
+.................
+
+
+
+Current Time: 56
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7        10         2
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5        11
+   P9        15
+   P1        12
+   P4        39
+.................
+.................
+
+
+
+Current Time: 57
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7        10         2
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5        10
+   P9        14
+   P1        11
+   P4        38
+.................
+.................
+
+
+
+Current Time: 58
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7        10         2
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5         9
+   P9        13
+   P1        10
+   P4        37
+.................
+.................
+
+
+
+Current Time: 59
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7        10         2
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5         8
+   P9        12
+   P1         9
+   P4        36
+.................
+.................
+
+
+
+Current Time: 60
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7        10         2
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5         7
+   P9        11
+   P1         8
+   P4        35
+.................
+.................
+
+
+
+Current Time: 61
+
+Current Process on the CPU: P7
+The Next Process on the CPU: P2
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5         6
+   P9        10
+   P1         7
+   P4        34
+   P6        22
+.................
+.................
+
+
+
+Current Time: 62
+
+Current Process on the CPU: P7
+The Next Process on the CPU: P2
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5         5
+   P9         9
+   P1         6
+   P4        33
+   P6        21
+.................
+.................
+
+
+
+Current Time: 63
+
+Current Process on the CPU: P7
+The Next Process on the CPU: P2
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5         4
+   P9         8
+   P1         5
+   P4        32
+   P6        20
+.................
+.................
+
+
+
+Current Time: 64
+
+Current Process on the CPU: P7
+The Next Process on the CPU: P2
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5         3
+   P9         7
+   P1         4
+   P4        31
+   P6        19
+.................
+.................
+
+
+
+Current Time: 65
+
+Current Process on the CPU: P7
+The Next Process on the CPU: P2
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5         2
+   P9         6
+   P1         3
+   P4        30
+   P6        18
+.................
+.................
+
+
+
+Current Time: 66
+
+Current Process on the CPU: P7
+The Next Process on the CPU: P2
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2         5         2
+   P8         1         2
+   P3         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P5         1
+   P9         5
+   P1         2
+   P4        29
+   P6        17
+.................
+.................
+
+
+
+Current Time: 67
+
+Current Process on the CPU: P5
+The Next Process on the CPU: P2
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2         5         2
+   P8         1         2
+   P3         4         2
+   P7         5         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P9         4
+   P1         1
+   P4        28
+   P6        16
+.................
+.................
+
+
+
+Current Time: 68
+
+Current Process on the CPU: P5
+The Next Process on the CPU: P1
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P1         2         1
+   P2         5         2
+   P8         1         2
+   P3         4         2
+   P7         5         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P9         3
+   P4        27
+   P6        15
+.................
+.................
+
+
+
+Current Time: 69
+
+Current Process on the CPU: P5
+The Next Process on the CPU: P1
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P1         2         1
+   P2         5         2
+   P8         1         2
+   P3         4         2
+   P7         5         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P9         2
+   P4        26
+   P6        14
+.................
+.................
+
+
+
+Current Time: 70
+
+Current Process on the CPU: P5
+The Next Process on the CPU: P1
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P1         2         1
+   P2         5         2
+   P8         1         2
+   P3         4         2
+   P7         5         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P9         1
+   P4        25
+   P6        13
+.................
+.................
+
+
+
+Current Time: 71
+
+Current Process on the CPU: P1
+The Next Process on the CPU: P9
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P9         9         1
+   P2         5         2
+   P8         1         2
+   P3         4         2
+   P7         5         2
+   P5         1         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        24
+   P6        12
+.................
+.................
+
+
+
+Current Time: 72
+
+Current Process on the CPU: P1
+The Next Process on the CPU: P9
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P9         9         1
+   P2         5         2
+   P8         1         2
+   P3         4         2
+   P7         5         2
+   P5         1         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        23
+   P6        11
+.................
+.................
+
+
+
+Current Time: 73
+
+Current Process on the CPU: P9
+The Next Process on the CPU: P8
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2         5         2
+   P8         1         2
+   P3         4         2
+   P7         5         2
+   P5         1         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        22
+   P6        10
+   P1        43
+.................
+.................
+
+
+
+Current Time: 74
+
+Current Process on the CPU: P9
+The Next Process on the CPU: P8
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2         5         2
+   P8         1         2
+   P3         4         2
+   P7         5         2
+   P5         1         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        21
+   P6         9
+   P1        42
+.................
+.................
+
+
+
+Current Time: 75
+
+Current Process on the CPU: P9
+The Next Process on the CPU: P8
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2         5         2
+   P8         1         2
+   P3         4         2
+   P7         5         2
+   P5         1         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        20
+   P6         8
+   P1        41
+.................
+.................
+
+
+
+Current Time: 76
+
+Current Process on the CPU: P9
+The Next Process on the CPU: P8
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P2         5         2
+   P8         1         2
+   P3         4         2
+   P7         5         2
+   P5         1         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        19
+   P6         7
+   P1        40
+.................
+.................
+
+
+
+Current Time: 77
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P8
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P8         1         2
+   P3         4         2
+   P7         5         2
+   P5         1         2
+   P9         5         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        18
+   P6         6
+   P1        39
+.................
+.................
+
+
+
+Current Time: 78
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P8
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P8         1         2
+   P3         4         2
+   P7         5         2
+   P5         1         2
+   P9         5         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        17
+   P6         5
+   P1        38
+.................
+.................
+
+
+
+Current Time: 79
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P8
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P8         1         2
+   P3         4         2
+   P7         5         2
+   P5         1         2
+   P9         5         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        16
+   P6         4
+   P1        37
+.................
+.................
+
+
+
+Current Time: 80
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P8
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P8         1         2
+   P3         4         2
+   P7         5         2
+   P5         1         2
+   P9         5         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        15
+   P6         3
+   P1        36
+.................
+.................
+
+
+
+Current Time: 81
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P8
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P8         1         2
+   P3         4         2
+   P7         5         2
+   P5         1         2
+   P9         5         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        14
+   P6         2
+   P1        35
+.................
+.................
+
+
+
+Current Time: 82
+
+Current Process on the CPU: P8
+The Next Process on the CPU: P3
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P3         4         2
+   P7         5         2
+   P5         1         2
+   P9         5         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        13
+   P6         1
+   P1        34
+   P2        24
+.................
+.................
+
+
+
+Current Time: 83
+
+Current Process on the CPU: P3
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7         5         2
+   P5         1         2
+   P9         5         2
+   P6         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        12
+   P1        33
+   P2        23
+   P8        33
+.................
+.................
+
+
+
+Current Time: 84
+
+Current Process on the CPU: P3
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7         5         2
+   P5         1         2
+   P9         5         2
+   P6         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        11
+   P1        32
+   P2        22
+   P8        32
+.................
+.................
+
+
+
+Current Time: 85
+
+Current Process on the CPU: P3
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7         5         2
+   P5         1         2
+   P9         5         2
+   P6         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4        10
+   P1        31
+   P2        21
+   P8        31
+.................
+.................
+
+
+
+Current Time: 86
+
+Current Process on the CPU: P3
+The Next Process on the CPU: P7
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7         5         2
+   P5         1         2
+   P9         5         2
+   P6         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         9
+   P1        30
+   P2        20
+   P8        30
+.................
+.................
+
+
+
+Current Time: 87
+
+Current Process on the CPU: P7
+The Next Process on the CPU: P5
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P5         1         2
+   P9         5         2
+   P6         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         8
+   P1        29
+   P2        19
+   P8        29
+   P3        33
+.................
+.................
+
+
+
+Current Time: 88
+
+Current Process on the CPU: P7
+The Next Process on the CPU: P5
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P5         1         2
+   P9         5         2
+   P6         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         7
+   P1        28
+   P2        18
+   P8        28
+   P3        32
+.................
+.................
+
+
+
+Current Time: 89
+
+Current Process on the CPU: P7
+The Next Process on the CPU: P5
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P5         1         2
+   P9         5         2
+   P6         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         6
+   P1        27
+   P2        17
+   P8        27
+   P3        31
+.................
+.................
+
+
+
+Current Time: 90
+
+Current Process on the CPU: P7
+The Next Process on the CPU: P5
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P5         1         2
+   P9         5         2
+   P6         4         2
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         5
+   P1        26
+   P2        16
+   P8        26
+   P3        30
+.................
+.................
+
+
+
+Current Time: 91
+
+Current Process on the CPU: P5
+The Next Process on the CPU: P9
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P9         5         2
+   P6         4         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         4
+   P1        25
+   P2        15
+   P8        25
+   P3        29
+.................
+.................
+
+
+
+Current Time: 92
+
+Current Process on the CPU: P9
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         4         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         3
+   P1        24
+   P2        14
+   P8        24
+   P3        28
+   P5        44
+.................
+.................
+
+
+
+Current Time: 93
+
+Current Process on the CPU: P9
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         4         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         2
+   P1        23
+   P2        13
+   P8        23
+   P3        27
+   P5        43
+.................
+.................
+
+
+
+Current Time: 94
+
+Current Process on the CPU: P9
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         4         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P4         1
+   P1        22
+   P2        12
+   P8        22
+   P3        26
+   P5        42
+.................
+.................
+
+
+
+Current Time: 95
+
+Current Process on the CPU: P4
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         4         2
+   P9         3         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        21
+   P2        11
+   P8        21
+   P3        25
+   P5        41
+.................
+.................
+
+
+
+Current Time: 96
+
+Current Process on the CPU: P4
+The Next Process on the CPU: P9
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         4         2
+   P9         3         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        20
+   P2        10
+   P8        20
+   P3        24
+   P5        40
+.................
+.................
+
+
+
+Current Time: 97
+
+Current Process on the CPU: P4
+The Next Process on the CPU: P9
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         4         2
+   P9         3         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        19
+   P2         9
+   P8        19
+   P3        23
+   P5        39
+.................
+.................
+
+
+
+Current Time: 98
+
+Current Process on the CPU: P4
+The Next Process on the CPU: P9
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         4         2
+   P9         3         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        18
+   P2         8
+   P8        18
+   P3        22
+   P5        38
+.................
+.................
+
+
+
+Current Time: 99
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P9
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P9         3         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        17
+   P2         7
+   P8        17
+   P3        21
+   P5        37
+   P4        45
+.................
+.................
+
+
+
+Current Time: 100
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P9
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P9         3         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        16
+   P2         6
+   P8        16
+   P3        20
+   P5        36
+   P4        44
+.................
+.................
+
+
+
+Current Time: 101
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P9
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P9         3         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        15
+   P2         5
+   P8        15
+   P3        19
+   P5        35
+   P4        43
+.................
+.................
+
+
+
+Current Time: 102
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P9
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P9         3         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        14
+   P2         4
+   P8        14
+   P3        18
+   P5        34
+   P4        42
+.................
+.................
+
+
+
+Current Time: 103
+
+Current Process on the CPU: P9
+The Next Process on the CPU: [idle]
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        13
+   P2         3
+   P8        13
+   P3        17
+   P5        33
+   P4        41
+   P6         8
+.................
+.................
+
+
+
+Current Time: 104
+
+Current Process on the CPU: P9
+The Next Process on the CPU: [idle]
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        12
+   P2         2
+   P8        12
+   P3        16
+   P5        32
+   P4        40
+   P6         7
+.................
+.................
+
+
+
+Current Time: 105
+
+Current Process on the CPU: P9
+The Next Process on the CPU: [idle]
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        11
+   P2         1
+   P8        11
+   P3        15
+   P5        31
+   P4        39
+   P6         6
+.................
+.................
+
+
+
+Current Time: 106
+
+Current Process on the CPU: P2
+The Next Process on the CPU: [idle]
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1        10
+   P8        10
+   P3        14
+   P5        30
+   P4        38
+   P6         5
+   P9        41
+.................
+.................
+
+
+
+Current Time: 107
+
+Current Process on the CPU: P2
+The Next Process on the CPU: [idle]
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         9
+   P8         9
+   P3        13
+   P5        29
+   P4        37
+   P6         4
+   P9        40
+.................
+.................
+
+
+
+Current Time: 108
+
+Current Process on the CPU: P2
+The Next Process on the CPU: [idle]
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         8
+   P8         8
+   P3        12
+   P5        28
+   P4        36
+   P6         3
+   P9        39
+.................
+.................
+
+
+
+Current Time: 109
+
+Current Process on the CPU: P2
+The Next Process on the CPU: [idle]
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         7
+   P8         7
+   P3        11
+   P5        27
+   P4        35
+   P6         2
+   P9        38
+.................
+.................
+
+
+
+Current Time: 110
+
+Current Process on the CPU: P2
+The Next Process on the CPU: [idle]
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         6
+   P8         6
+   P3        10
+   P5        26
+   P4        34
+   P6         1
+   P9        37
+.................
+.................
+
+
+
+Current Time: 111
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         5         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         5
+   P8         5
+   P3         9
+   P5        25
+   P4        33
+   P9        36
+.................
+.................
+
+
+
+Current Time: 112
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         5         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         4
+   P8         4
+   P3         8
+   P5        24
+   P4        32
+   P9        35
+.................
+.................
+
+
+
+Current Time: 113
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         5         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         3
+   P8         3
+   P3         7
+   P5        23
+   P4        31
+   P9        34
+.................
+.................
+
+
+
+Current Time: 114
+
+Current Process on the CPU: P2
+The Next Process on the CPU: P6
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P6         5         2
+   P7         1         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         2
+   P8         2
+   P3         6
+   P5        22
+   P4        30
+   P9        33
+.................
+.................
+
+
+
+Current Time: 115
+
+Current Process on the CPU: P6
+The Next Process on the CPU: P2
+....................................
+
+
+List of Processes in the Ready Queue:
+
+Process     BurstPriority level
+   P7         1         3
+   P2         8         3
+
+.................
+
+
+List of Processes in I/O:
+
+Process     Remaining I/O Time
+   P1         1
+   P8         1
+   P3         5
+   P5        21
+   P4        29
+   P9        32
+.................
+.................
+
+
+

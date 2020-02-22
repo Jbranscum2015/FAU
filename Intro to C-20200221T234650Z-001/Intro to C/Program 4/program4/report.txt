@@ -1,0 +1,73 @@
+
+
+Id: 123
+
+Artist: Michael Buble
+
+Song name: Cry Me A River
+
+Song length: 256
+
+Cost: $0.50
+
+Retail cost: $1.99
+
+Id: 234
+
+Artist: Journey
+
+Song name: Don't Stop Believin'
+
+Song length: 250
+
+Cost: $0.60
+
+Retail cost: $2.99
+
+Id: 345
+
+Artist: AC/DC
+
+Song name: Back in Black
+
+Song length: 255
+
+Cost: $0.70
+
+Retail cost: $1.50
+
+Id: 456
+
+Artist: Queen
+
+Song name: We Are The Champions
+
+Song length: 191
+
+Cost: $0.80
+
+Retail cost: $3.99
+
+Id: 567
+
+Artist: The Buggles
+
+Song name: Video Killed The Radio Star
+
+Song length: 189
+
+Cost: $0.20
+
+Retail cost: $0.99
+
+Id: 678
+
+Artist: Fall Out Boy
+
+Song name: Thnks Fr Th Mmrs
+
+Song length: 253
+
+Cost: $1.99
+
+Retail cost: $4.99

@@ -1,0 +1,158 @@
+SQL> set define off
+SQL> 
+SQL> DROP TABLE author cascade constraints;
+
+Table dropped.
+
+SQL> DROP TABLE book cascade constraints;
+
+Table dropped.
+
+SQL> DROP TABLE publication cascade constraints;
+
+Table dropped.
+
+SQL> 
+SQL> PURGE RECYCLEBIN;
+
+Recyclebin purged.
+
+SQL> 
+SQL> CREATE TABLE author(id INTEGER, name VARCHAR (30), birth_year INTEGER,
+  2  gender CHAR (1), country VARCHAR (5),
+  3  PRIMARY KEY (id));
+
+Table created.
+
+SQL> 
+SQL> CREATE TABLE book(id INTEGER, title VARCHAR (30), genre VARCHAR (30),
+  2  cost NUMBER,
+  3  PRIMARY KEY (id));
+
+Table created.
+
+SQL> 
+SQL> CREATE TABLE publication(a_id INTEGER, b_id INTEGER, pub_year NUMBER,
+  2  publisher VARCHAR (26),
+  3  FOREIGN KEY (a_id) REFERENCES author ON DELETE CASCADE,
+  4  FOREIGN KEY (b_id) REFERENCES book ON DELETE CASCADE);
+
+Table created.
+
+SQL> 
+SQL> INSERT INTO author(id, name, birth_year, gender, country)
+  2  VALUES (1,'Mark Twain',1835,'M','USA');
+
+1 row created.
+
+SQL> 
+SQL> INSERT INTO author(id,name,birth_year,gender,country)
+  2  VALUES(2,'Jane Austen',1775,'F','UK');
+
+1 row created.
+
+SQL> 
+SQL> INSERT INTO author(id,name,birth_year,gender,country)
+  2  VALUES (3,'William Shakespeare',1564,'M','UK');
+
+1 row created.
+
+SQL> 
+SQL> INSERT INTO author(id,name,birth_year,gender,country)
+  2  VALUES (4,'J.R.R. Tolkien',1892,'M','UK');
+
+1 row created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> 
+SQL> INSERT INTO book(id,title,genre,cost)
+  2  VALUES (1,'The Adventures of Tom Sawyer','Literature',10);
+
+1 row created.
+
+SQL> 
+SQL> INSERT INTO book(id,title,genre,cost)
+  2  VALUES (2,'Lord of the Rings','Fantasy',100);
+
+1 row created.
+
+SQL> 
+SQL> INSERT INTO book(id,title,genre,cost)
+  2  VALUES (3,'Pride & Prejudice','Romance',16);
+
+1 row created.
+
+SQL> 
+SQL> INSERT INTO book(id,title,genre,cost)
+  2  VALUES (4,'Othello','Play',16);
+
+1 row created.
+
+SQL> 
+SQL> INSERT INTO book(id,title,genre,cost)
+  2  VALUES (5,'Hamlet','Play',12);
+
+1 row created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> 
+SQL> INSERT INTO publication(a_id,b_id,pub_year,publisher)
+  2  VALUES (4,2,1954,'Allen & Unwin');
+
+1 row created.
+
+SQL> 
+SQL> INSERT INTO publication(a_id,b_id,pub_year,publisher)
+  2  VALUES (1,1,1876,'American Publishing Co.');
+
+1 row created.
+
+SQL> 
+SQL> INSERT INTO publication(a_id,b_id,pub_year,publisher)
+  2  VALUES (2,3,1813,'Thomas Egerton');
+
+1 row created.
+
+SQL> 
+SQL> INSERT INTO publication(a_id,b_id,pub_year,publisher)
+  2  VALUES (3,5,1609,'Unknown');
+
+1 row created.
+
+SQL> 
+SQL> INSERT INTO publication(a_id,b_id,pub_year,publisher)
+  2  VALUES (3,4,1622,'Thomas Walkley');
+
+1 row created.
+
+SQL> commit;
+
+Commit complete.
+
+SQL> 
+SQL> update book
+  2  set cost = 13.6
+  3  where id=4;
+
+1 row updated.
+
+SQL> 
+SQL> update book
+  2  set genre = 'Novel'
+  3  where id=3;
+
+1 row updated.
+
+SQL> 
+SQL> delete from book where id = 5;
+
+1 row deleted.
+
+SQL> 
+SQL> SPOOL OFF

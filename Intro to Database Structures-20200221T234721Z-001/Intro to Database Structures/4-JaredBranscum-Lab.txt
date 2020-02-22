@@ -1,0 +1,405 @@
+SQL> set linesize 300
+SQL> set pagesize 50000
+SQL> set define off
+SQL> 
+SQL> drop table  team_player_arena;
+
+Table dropped.
+
+SQL> drop table  team;
+
+Table dropped.
+
+SQL> drop table  player;
+
+Table dropped.
+
+SQL> drop table  arena;
+
+Table dropped.
+
+SQL> 
+SQL> purge recyclebin;
+
+Recyclebin purged.
+
+SQL> 
+SQL> 
+SQL> -- Create the team table
+SQL> CREATE TABLE  team ( team_ID    INTEGER,
+  2  			  tname      VARCHAR(15),
+  3  			  rank	     INTEGER,
+  4  			  city	     VARCHAR(20),
+  5  			  championships      INTEGER,
+  6  			  PRIMARY KEY (team_id)
+  7  				     );
+
+Table created.
+
+SQL> 
+SQL> -- Create the player table
+SQL> CREATE TABLE  player(   player_ID INTEGER,
+  2  			     pname	     VARCHAR(30),
+  3  			     position	     VARCHAR(20),
+  4  			     draft_year      INTEGER,
+  5  			     retire_year INTEGER,
+  6  			     education	     VARCHAR(30),
+  7  			     PRIMARY KEY(player_ID)
+  8  				     );
+
+Table created.
+
+SQL> 
+SQL> -- Create the arena table
+SQL> CREATE TABLE  arena(	     arena_ID	     INTEGER,
+  2  				     aname	     VARCHAR(20),
+  3  				     city	     VARCHAR(20),
+  4  				     PRIMARY KEY(arena_ID)
+  5  				     );
+
+Table created.
+
+SQL> 
+SQL> -- Create the team_player_arena  table
+SQL> CREATE TABLE team_player_arena (	     team_ID	     INTEGER,
+  2  					     player_ID	     INTEGER,
+  3  					     arena_ID	     INTEGER,
+  4  					     points	     INTEGER,
+  5  					     PRIMARY KEY(team_ID, player_ID, arena_ID),
+  6  					     FOREIGN KEY(team_ID)    REFERENCES team,
+  7  					     FOREIGN KEY(player_ID)  REFERENCES player,
+  8  					     FOREIGN KEY(arena_ID)   REFERENCES arena
+  9  				     );
+
+Table created.
+
+SQL> 
+SQL> -- Ensure all data is removed from the tables
+SQL> truncate table team_player_arena;
+
+Table truncated.
+
+SQL> delete from team;
+
+0 rows deleted.
+
+SQL> delete from player;
+
+0 rows deleted.
+
+SQL> delete from arena;
+
+0 rows deleted.
+
+SQL> 
+SQL> 
+SQL> -- INSERT THE DATA WITH NAMED FIELDS (notice that the fields are not in the order the table was created)
+SQL> 
+SQL> insert into     team    (tname, rank , city, championships, team_ID)
+  2  values( 'Clippers'  , 6 ,	     'LA'	   , 0 , 1  );
+
+1 row created.
+
+SQL> insert into     team    (tname, rank , city, championships, team_ID)
+  2  values( 'Bulls'	 , 5 ,	     'Chicago'	   , 6,      2	);
+
+1 row created.
+
+SQL> insert into     team    (tname, rank , city, championships, team_ID)
+  2  values('Hornets' , 9 , 'Charlotte'   , 0,	     3	);
+
+1 row created.
+
+SQL> insert into     team    (tname, rank , city, championships, team_ID)
+  2  values('Blazers'	, 2 ,'Portland'  , 0,	     4	);
+
+1 row created.
+
+SQL> insert into     team    (tname, rank , city, championships, team_ID)
+  2  values('Spurs'	, 7 , 'San Antonio' , 5,     5	);
+
+1 row created.
+
+SQL> insert into     team    (tname, rank , city, championships, team_ID)
+  2  values('Mavericks' , 4 ,	     'Dallas'	   , 1,      6	);
+
+1 row created.
+
+SQL> 
+SQL> -- INSERT THE DATA WITH ORDER OF FIELDS
+SQL> insert into     player  values( 1 ,  'Chris Paul' ,'Small Forward', 2005,	null,  'Wake Forest');
+
+1 row created.
+
+SQL> insert into     player  values( 2 ,  'tony Parker' , 'Point guard', 2001,	null,  'INSEP');
+
+1 row created.
+
+SQL> insert into     player  values( 3 ,  'Marco Belinelli'  , 'Shooting guard', 2007,	null,  'San Giovanni');
+
+1 row created.
+
+SQL> insert into     player  values( 4 ,  'Gary Neal'	     , 'Power Forward', 2007,  null,  'La Salle University');
+
+1 row created.
+
+SQL> insert into     player  values( 5 ,  'Kawhi Leonard'    , 'Forward' , 2011,  null,  'San Diego State');
+
+1 row created.
+
+SQL> insert into     player  values( 6 ,  'Patty Mills'      ,'Point guard'  , 2009,  null,  'Marist College');
+
+1 row created.
+
+SQL> insert into     player  values( 7 ,  'Tyson Chandler'   , 'Center', 2001,	null,  'Dominguez');
+
+1 row created.
+
+SQL> insert into     player  values( 8 ,  'Derek Fisher'     , 'Shooting guard', 1996,	2014,  'Arkansas');
+
+1 row created.
+
+SQL> 
+SQL> --  -------------------------------------
+SQL> 
+SQL> insert into     arena   values( 1 ,     'American Airlines' ,   'Miami');
+
+1 row created.
+
+SQL> insert into     arena   values( 2 ,     'Moda Center'	 ,   'Portland');
+
+1 row created.
+
+SQL> insert into     arena   values( 3 ,     'Staples Center'	 ,   'LA');
+
+1 row created.
+
+SQL> insert into     arena   values( 4 ,     'United Center'	 ,   'Chicago');
+
+1 row created.
+
+SQL> insert into     arena   values( 5 ,     'TD Garden'	 ,   'Boston');
+
+1 row created.
+
+SQL> insert into     arena   values( 6 ,     'ATT Center'	 ,   'San Antonio');
+
+1 row created.
+
+SQL> insert into     arena   values( 7 ,     'Philips Arena'	 ,   'Atlanta');
+
+1 row created.
+
+SQL> 
+SQL> --  ---------------------------------------------------------------------
+SQL> 
+SQL> insert into     team_player_arena	 values( 1 ,	     1 ,     1 ,     20  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 1 ,     1 ,     4 ,     17  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 2 ,     3 ,     1 ,     32  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 2 ,     3 ,     2 ,     22  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 2 ,     3 ,     3 ,     13  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 2 ,     3 ,     4 ,     25  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 2 ,     3 ,     5 ,     06  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 2 ,     3 ,     6 ,     14  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 2 ,     3 ,     7 ,     18  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 2 ,     5 ,     2 ,     11  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 3 ,     3 ,     1 ,     20  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 3 ,     4 ,     2 ,     05  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 4 ,     6 ,     3 ,     23  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 4 ,     6 ,     7 ,     18  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 5 ,     2 ,     2 ,     24  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 5 ,     2 ,     4 ,     10  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 5 ,     5 ,     5 ,     25  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 5 ,     5 ,     7 ,     16  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 5 ,     6 ,     2 ,     24  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 5 ,     1 ,     4 ,     33  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 5 ,     3 ,     4 ,     31  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 5 ,     4 ,     4 ,     26  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 5 ,     5 ,     4 ,     14  );
+
+1 row created.
+
+SQL> insert into     team_player_arena	     values( 5 ,     6 ,     4 ,     05  );
+
+1 row created.
+
+SQL> 
+SQL> -- Queries
+SQL> 
+SQL> SET AUTOTRACE TRACEONLY EXPLAIN
+SQL> --1.
+SQL> select p.pname from player p, team_player_arena tpa;
+
+Execution Plan
+----------------------------------------------------------                                                                                                                                                                                                                                                  
+Plan hash value: 3554176961                                                                                                                                                                                                                                                                                 
+                                                                                                                                                                                                                                                                                                            
+---------------------------------------------------------------------------------------                                                                                                                                                                                                                     
+| Id  | Operation              | Name         | Rows  | Bytes | Cost (%CPU)| Time     |                                                                                                                                                                                                                     
+---------------------------------------------------------------------------------------                                                                                                                                                                                                                     
+|   0 | SELECT STATEMENT       |              |   192 |  3264 |     7   (0)| 00:00:01 |                                                                                                                                                                                                                     
+|   1 |  MERGE JOIN CARTESIAN  |              |   192 |  3264 |     7   (0)| 00:00:01 |                                                                                                                                                                                                                     
+|   2 |   TABLE ACCESS FULL    | PLAYER       |     8 |   136 |     3   (0)| 00:00:01 |                                                                                                                                                                                                                     
+|   3 |   BUFFER SORT          |              |    24 |       |     4   (0)| 00:00:01 |                                                                                                                                                                                                                     
+|   4 |    INDEX FAST FULL SCAN| SYS_C0086086 |    24 |       |     1   (0)| 00:00:01 |                                                                                                                                                                                                                     
+---------------------------------------------------------------------------------------                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                            
+Note                                                                                                                                                                                                                                                                                                        
+-----                                                                                                                                                                                                                                                                                                       
+   - dynamic statistics used: dynamic sampling (level=2)                                                                                                                                                                                                                                                    
+
+SQL> select p.pname from player p, team_player_arena tpa
+  2  	     where p.player_id = tpa.player_id;
+
+Execution Plan
+----------------------------------------------------------                                                                                                                                                                                                                                                  
+Plan hash value: 719076988                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                            
+--------------------------------------------------------------------------------------                                                                                                                                                                                                                      
+| Id  | Operation             | Name         | Rows  | Bytes | Cost (%CPU)| Time     |                                                                                                                                                                                                                      
+--------------------------------------------------------------------------------------                                                                                                                                                                                                                      
+|   0 | SELECT STATEMENT      |              |    24 |  1032 |     5   (0)| 00:00:01 |                                                                                                                                                                                                                      
+|*  1 |  HASH JOIN            |              |    24 |  1032 |     5   (0)| 00:00:01 |                                                                                                                                                                                                                      
+|   2 |   TABLE ACCESS FULL   | PLAYER       |     8 |   240 |     3   (0)| 00:00:01 |                                                                                                                                                                                                                      
+|   3 |   INDEX FAST FULL SCAN| SYS_C0086086 |    24 |   312 |     2   (0)| 00:00:01 |                                                                                                                                                                                                                      
+--------------------------------------------------------------------------------------                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                            
+Predicate Information (identified by operation id):                                                                                                                                                                                                                                                         
+---------------------------------------------------                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                            
+   1 - access("P"."PLAYER_ID"="TPA"."PLAYER_ID")                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                                                            
+Note                                                                                                                                                                                                                                                                                                        
+-----                                                                                                                                                                                                                                                                                                       
+   - dynamic statistics used: dynamic sampling (level=2)                                                                                                                                                                                                                                                    
+
+SQL> 
+SQL> --2.
+SQL> select a.aname, a.city
+  2  	     from arena a, team_player_arena tpa, team t
+  3  	     where tpa.team_id = t.team_id
+  4  	     and tpa.arena_id = a.arena_id;
+
+Execution Plan
+----------------------------------------------------------                                                                                                                                                                                                                                                  
+Plan hash value: 828080706                                                                                                                                                                                                                                                                                  
+                                                                                                                                                                                                                                                                                                            
+--------------------------------------------------------------------------------------                                                                                                                                                                                                                      
+| Id  | Operation             | Name         | Rows  | Bytes | Cost (%CPU)| Time     |                                                                                                                                                                                                                      
+--------------------------------------------------------------------------------------                                                                                                                                                                                                                      
+|   0 | SELECT STATEMENT      |              |    24 |  1200 |     5   (0)| 00:00:01 |                                                                                                                                                                                                                      
+|*  1 |  HASH JOIN            |              |    24 |  1200 |     5   (0)| 00:00:01 |                                                                                                                                                                                                                      
+|   2 |   TABLE ACCESS FULL   | ARENA        |     7 |   259 |     3   (0)| 00:00:01 |                                                                                                                                                                                                                      
+|   3 |   INDEX FAST FULL SCAN| SYS_C0086086 |    24 |   312 |     2   (0)| 00:00:01 |                                                                                                                                                                                                                      
+--------------------------------------------------------------------------------------                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                                                                                            
+Predicate Information (identified by operation id):                                                                                                                                                                                                                                                         
+---------------------------------------------------                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                            
+   1 - access("TPA"."ARENA_ID"="A"."ARENA_ID")                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                            
+Note                                                                                                                                                                                                                                                                                                        
+-----                                                                                                                                                                                                                                                                                                       
+   - dynamic statistics used: dynamic sampling (level=2)                                                                                                                                                                                                                                                    
+
+SQL> select distinct a.aname, a.city
+  2  	     from arena a, team_player_arena tpa, team t
+  3  	     where tpa.team_id = t.team_id
+  4  	     and tpa.arena_id = a.arena_id;
+
+Execution Plan
+----------------------------------------------------------                                                                                                                                                                                                                                                  
+Plan hash value: 58728419                                                                                                                                                                                                                                                                                   
+                                                                                                                                                                                                                                                                                                            
+---------------------------------------------------------------------------------------                                                                                                                                                                                                                     
+| Id  | Operation              | Name         | Rows  | Bytes | Cost (%CPU)| Time     |                                                                                                                                                                                                                     
+---------------------------------------------------------------------------------------                                                                                                                                                                                                                     
+|   0 | SELECT STATEMENT       |              |     7 |   350 |     5   (0)| 00:00:01 |                                                                                                                                                                                                                     
+|   1 |  HASH UNIQUE           |              |     7 |   350 |     5   (0)| 00:00:01 |                                                                                                                                                                                                                     
+|*  2 |   HASH JOIN SEMI       |              |     7 |   350 |     5   (0)| 00:00:01 |                                                                                                                                                                                                                     
+|   3 |    TABLE ACCESS FULL   | ARENA        |     7 |   259 |     3   (0)| 00:00:01 |                                                                                                                                                                                                                     
+|   4 |    INDEX FAST FULL SCAN| SYS_C0086086 |    24 |   312 |     2   (0)| 00:00:01 |                                                                                                                                                                                                                     
+---------------------------------------------------------------------------------------                                                                                                                                                                                                                     
+                                                                                                                                                                                                                                                                                                            
+Predicate Information (identified by operation id):                                                                                                                                                                                                                                                         
+---------------------------------------------------                                                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                                                            
+   2 - access("TPA"."ARENA_ID"="A"."ARENA_ID")                                                                                                                                                                                                                                                              
+                                                                                                                                                                                                                                                                                                            
+Note                                                                                                                                                                                                                                                                                                        
+-----                                                                                                                                                                                                                                                                                                       
+   - dynamic statistics used: dynamic sampling (level=2)                                                                                                                                                                                                                                                    
+
+SQL> 
+SQL> -- COMMIT and save data
+SQL> COMMIT;
+
+Commit complete.
+
+SQL> spool off

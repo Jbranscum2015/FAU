@@ -1,0 +1,88 @@
+/************************************************************************************************************************
+Name: Jared Branscum          Z#: 23353586
+Course: Foundations of Computer Science (COP3014)
+Professor: Dr. Lofton Bullard
+Due Date: 3/13/17              Due Time: 11:59 P.M.
+Total Points: 10
+Assignment 7: charword_freq
+
+Description: In this assignment, I will implement a program called "charword_freq.cpp"
+to determine the number of words and the number of occurrences of each letter
+in a block of text stored in a data file called “mytext.dat”. I will define a word to be
+any string of letters that is delimited at each end by either whitespace, a period, a
+comma, or the beginning or end of a line. I will assume that the input consists
+entirely of letters, whitespace, commas and periods. When outputting the
+number of words and letters that occur in a line, I will count upper- and
+lowercase versions of a letter as the same letter. The output of the letters will be in
+alphabetical order and I will only list the letters that occur in the input data file.
+
+
+*************************************************************************************************************************/
+
+//preprocessor directives
+#include <string>
+#include <fstream>
+#include <iostream>
+
+using namespace std;
+
+//function prototypes
+void Input(ifstream &, string [], int &);
+void Process(string [], int []);
+int Search(string[], int &, char &);
+void LowerCase(string[], )
+void Output(int &, int []);
+
+int main() {
+	//open file
+	ifstream in;
+	in.open("mytext.dat");
+
+	//declare variables
+	string s1[60];
+	int frequency[20], wordcount=0;
+
+	if (in.fail()) {
+		cout << "The input file did not open correctly." << endl;
+	}
+
+	else {
+		Input(in, s1, wordcount);
+		for (int i = 0; i < wordcount; i++) {
+			cout << s1[i];
+		}
+		//Process(s1, repeat);
+		//Output(wordcount, repeat);
+	}
+
+	return 0;
+}
+
+//function definitions
+
+void Input(ifstream & input, string word[], int & wordcount) {
+	while (!input.eof()) {
+		getline(input, word[wordcount], ' ');
+		wordcount++;
+	}
+}
+
+void Process(string word[], int frequency[]) {
+
+}
+
+int Search(string word[], int & wordcount, char & target) {
+	int found, frequency=0;
+	for ( int i = 0; i < wordcount; i++) {
+		found = word[i].find(target, i);
+		if (found > 0) {
+			frequency ++;
+		}
+	}
+
+	return frequency;
+}
+
+void Output(int & wordcount, int frequency[]) {
+
+}

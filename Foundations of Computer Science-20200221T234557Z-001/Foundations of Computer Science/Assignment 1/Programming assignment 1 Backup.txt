@@ -1,0 +1,54 @@
+/*
+Jared Branscum	        Total Points:  10
+Due Date:  2/4/2013
+Course:  C0P3014
+Assignment:  Assignment 1
+Professor: Dr. Lofton Bullard
+
+Description: (The program calculates the net cost of a call, the tax on the call, and the total cost of the call from the information provided: 
+the cellphone number, the number of relay stations, and the length in minutes of the call from the user)
+*/
+#include <iostream> //standard library for i/o
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	//declared variables and initialization
+	string cell_num; //user provided
+	int relays, call_length; //user provided
+	int tax_rate; //determined by number of relays provided by the user
+	double net_cost, call_tax, total_cost; //what the program calculates
+	string user_response = "y";
+
+	while (user_response == "y" || user_response == "Y")
+	{
+		//The code to get the user's input, perform the calculations, and print
+		// the results to the screen should go here. 
+
+		//get the cell number
+		cout << "Please insert cell number: ";
+		cin >> cell_num;
+
+		//get the number of relay stations
+		cout << "\nPlease insert the number of relay stations: ";
+		cin >> relays;
+
+		//get the call length
+		cout << "\nPlease insert the length of the call: ";
+		cin >> call_length;
+
+		//calculate the net cost of the call
+		net_cost = (relays / 50.0*0.40*call_length);
+		
+		//calculate the tax rate
+
+
+		//repeat the loop?
+		cout << "Would you like to do another calculation (Y or N): ";
+		cin >> user_response;
+	}
+
+	return  0;
+}

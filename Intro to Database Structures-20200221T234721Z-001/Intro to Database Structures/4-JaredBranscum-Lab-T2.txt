@@ -1,0 +1,226 @@
+SQL> insert into team values (7, 'Knicks', 8, 'NY', 0);
+
+insert into team values (7, 'Knicks', 8, 'NY', 0)
+
+*
+ERROR at line 1:
+ORA-00001: unique constraint (MICHAUDJ2015.SYS_C0076192) violated 
+
+
+
+
+SQL> commit;
+
+
+Commit complete.
+
+
+
+SQL> insert into team values (9, 'Heat', 12, 'MI', 0);
+
+
+1 row created.
+
+
+
+SQL> select * from team;
+
+
+   TEAM_ID TNAME                 RANK CITY                 CHAMPIONSHIPS        
+
+---------- --------------- ---------- -------------------- -------------        
+                
+         
+7          Lakers                   3 LA                               0 
+1          Clippers                 6 LA                               0        
+         
+2          Bulls                    5 Chicago                          6        
+         
+3          Hornets                  9 Charlotte                        0        
+         
+4          Blazers                  2 Portland                         0        
+         
+5          Spurs                    7 San Antonio                      5        
+         
+6          Mavericks                4 Dallas                           1        
+         
+9          Heat                    12 MI                               0        
+
+
+
+8 rows selected.
+
+
+
+SQL> rollback;
+
+
+Rollback complete.
+
+
+
+SQL> select * from team;
+
+
+   TEAM_ID TNAME                 RANK CITY                 CHAMPIONSHIPS        
+
+---------- --------------- ---------- -------------------- -------------        
+         
+7          Lakers                   3 LA                               0        
+         
+1          Clippers                 6 LA                               0        
+         
+2          Bulls                    5 Chicago                          6        
+         
+3          Hornets                  9 Charlotte                        0        
+         
+4          Blazers                  2 Portland                         0        
+         
+5          Spurs                    7 San Antonio                      5        
+         
+6          Mavericks                4 Dallas                           1        
+
+
+
+7 rows selected.
+
+
+
+SQL> insert into arena values (8, 'Pepsi Center', 'Denver');
+
+
+1 row created.
+
+
+
+SQL> insert into team values(9,'Pelicans',15,'NO',0);
+
+
+1 row created.
+
+
+
+SQL> select * from team;
+
+
+   TEAM_ID TNAME                 RANK CITY                 CHAMPIONSHIPS        
+
+---------- --------------- ---------- -------------------- -------------        
+         
+7          Lakers                   3 LA                               0        
+         
+1          Clippers                 6 LA                               0        
+         
+2          Bulls                    5 Chicago                          6        
+         
+3          Hornets                  9 Charlotte                        0        
+         
+4          Blazers                  2 Portland                         0        
+         
+5          Spurs                    7 San Antonio                      5        
+         
+6          Mavericks                4 Dallas                           1        
+         
+9          Pelicans                15 NO                               0        
+
+
+
+8 rows selected.
+
+
+
+SQL> select * from arena;
+
+  
+ARENA_ID ANAME                CITY                                            
+
+---------- -------------------- --------------------                            
+         
+1          American Airlines    Miami                                           
+         
+2          Moda Center          Portland                                        
+         
+3          Staples Center       LA                                              
+         
+4          United Center        Chicago                                         
+         
+5          TD Garden            Boston                                          
+         
+6          ATT Center           San Antonio                                     
+         
+7          Philips Arena        Atlanta                                         
+         
+8          Pepsi Center         Denver                                          
+
+
+
+8 rows selected.
+
+
+
+SQL> commit;
+
+
+Commit complete.
+
+
+
+SQL> select * from team;
+
+
+   TEAM_ID TNAME                 RANK CITY                 CHAMPIONSHIPS        
+
+---------- --------------- ---------- -------------------- -------------        
+         
+7          Lakers                   3 LA                               0        
+         
+1          Clippers                 6 LA                               0        
+         
+2          Bulls                    5 Chicago                          6        
+         
+3          Hornets                  9 Charlotte                        0        
+         
+4          Blazers                  2 Portland                         0        
+         
+5          Spurs                    7 San Antonio                      5        
+         
+6          Mavericks                4 Dallas                           1        
+         
+9          Pelicans                15 NO                               0        
+
+
+
+8 rows selected.
+
+
+
+SQL> select * from arena;
+
+
+  ARENA_ID ANAME                CITY                                            
+
+---------- -------------------- --------------------                            
+         
+1          American Airlines    Miami                                           
+         
+2          Moda Center          Portland                                        
+         
+3          Staples Center       LA                                              
+         
+4          United Center        Chicago                                         
+         
+5          TD Garden            Boston                                          
+         
+6          ATT Center           San Antonio                                     
+         
+7          Philips Arena        Atlanta                                         
+         
+8          Pepsi Center         Denver                                          
+
+
+
+8 rows selected.
+
+
+
+SQL> SPOOL OFF

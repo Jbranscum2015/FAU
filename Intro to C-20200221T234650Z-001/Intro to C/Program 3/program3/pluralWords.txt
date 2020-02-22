@@ -1,0 +1,3 @@
+Word is nat Plural is nats
+Word is nag Plural is nags
+Word is Mad Plural is mads
